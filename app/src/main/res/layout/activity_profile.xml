@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background = "@color/lightblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile"
+        android:textColor = "@color/pink"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="25dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/profile"
+        android:textColor = "@color/pink"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameet"
+        android:layout_toRightOf="@+id/name"
+        android:layout_alignTop = "@+id/name"
+        android:textColor = "@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="25dp"
+        android:id="@+id/email"
+        android:layout_below = "@+id/name"
+        android:textColor = "@color/pink"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailet"
+        android:layout_toRightOf="@+id/email"
+        android:layout_alignTop="@+id/email"
+        android:textColor = "@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="25dp"
+        android:id="@+id/status"
+        android:layout_below = "@+id/email"
+        android:textColor = "@color/pink"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Tutor/Tutee/SBuddy"
+        android:id = "@+id/statsp"
+        android:layout_alignTop= "@+id/status"
+        android:layout_toRightOf="@+id/status"
+        android:textColor = "@color/black"
+        >
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textSize="25dp"
+        android:id ="@+id/subject"
+        android:layout_below="@+id/status"
+        android:textColor = "@color/pink"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Subject"
+        android:id = "@+id/subjectsp"
+        android:layout_alignTop= "@+id/subject"
+        android:layout_toRightOf="@+id/subject"
+        android:textColor = "@color/black"
+        >
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When"
+        android:textSize="25dp"
+        android:id ="@+id/when"
+        android:layout_below="@+id/subject"
+        android:textColor = "@color/pink"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Times"
+        android:id = "@+id/whensp"
+        android:layout_alignTop= "@+id/when"
+        android:layout_toRightOf="@+id/when"
+        android:textColor = "@color/black"
+        >
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:textSize="25dp"
+        android:id ="@+id/size"
+        android:layout_below="@+id/when"
+        android:textColor = "@color/pink"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Tutor/Tutee/SBuddy"
+        android:id = "@+id/sizesp"
+        android:layout_alignTop= "@+id/size"
+        android:layout_toRightOf="@+id/size"
+        android:textColor = "@color/black"
+        >
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "save profile"
+        android:id = "@+id/save"
+        android:layout_alignParentBottom="true"
+        android:textColor = "@color/black"
+        android:background="@color/transparent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "register"
+        android:id = "@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor = "@color/black"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>
